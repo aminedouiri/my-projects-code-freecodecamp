@@ -1,0 +1,123 @@
+body {
+    background-color: #ddd;
+}
+
+.head {
+    grid-area: header;
+    text-align: center;
+    
+}
+
+.lefts {
+    grid-area: left;
+}
+
+.rights {
+    grid-area: right;
+}
+
+.forms {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 30px 40px 30px 40px;
+    background-color: rgba(0, 183, 255, 0.877);
+    justify-content: space-around;
+    grid-gap: 10px;
+}
+
+textarea {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+textarea:hover {
+    color: indigo;
+}
+
+.group {
+    display: inherit;
+    flex-direction: inherit;
+    grid-gap: inherit;
+    justify-content: inherit;
+}
+
+input {
+    height: 30px;
+    font-size: 20px;
+}
+
+button {
+    height: 40px;
+    color: white;
+    background-color: rgb(16, 221, 16);
+}
+
+input:hover {
+    color: blue;
+    transform: scale(1.05);
+}
+
+select {
+    height: 38px;
+    font-size: 20px;
+}
+
+.input-radio {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    background-color: #d5d5d5;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    margin-bottom: -2px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    background-color: cornsilk;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container {
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 50px 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "header" "left" "right" "content";
+}
+
+@media (min-width: 580px)and (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr 520px 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "left header right" "left content right";
+    }
+}
+
+@media (min-width: 750px) {
+    .container {
+        grid-template-columns: 1fr 720px 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "left header right" "left content right";
+    }
+}
