@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="palindrome, cesar, roman, numeral, telephone">
+    <title>Javascript Projects</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <section class="CesareCipher-section">
+            <label for="text-normal">Normal Text</label><br />
+            <input type="text" name="text-normal" id="text-normal">
+            <button onclick="rot13()">Convert Cesar</button>
+            <p id="text-cesar"></p>
+        </section>
+        <hr />
+        <section class="PalindromeChecker-section">
+            <label for="palindrome-text">Text Palindrome</label> <br />
+            <input type="text" id="palindrome-text">
+            <button onclick="palindrome()">Check Palindrome</button>
+            <p id="palindrome-resultat"></p>  
+        </section>
+        <hr />
+        <section class="RomanNumeralConvetor-section">
+            <label for="romanNumber">Roman Number</label><br />
+            <input type="number" name="romanNumber" id="romanNumber">
+            <button onclick="convertToRoman()">Convert Roman</button>
+            <p id="romanResultat"></p> 
+        </section>
+        <hr />
+        <section class="phoneNumberValidator">
+            <label for="telephone-number">Entre a Number like: 700-523-7896</label><br />
+            <input type="number" id="telephone-number">
+            <button onclick="phoneNumberValidator()">Check Telephone</button>
+            <p id="telephone-resultat"></p>
+        </section>
+
+    </main>
+
+    <script src="Caesars Cipher.js"></script>
+    <script src="Palindrome Checker.js"></script>
+    <script src="Roman Numeral Converter.js"></script>
+    <script src="Telephone Number Validator.js"></script>
+</body>
+
+</html>
